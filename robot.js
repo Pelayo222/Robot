@@ -326,16 +326,16 @@ function control() {
     if(controls[87]){ // w
         grupo.position.x -= Math.cos(grupo.rotation.y) * vel;
         grupo.position.z -= -Math.sin(grupo.rotation.y) * vel;
-        ruedaI.rotation.y+=Math.PI/90;
-        ruedaD.rotation.y+=Math.PI/90;
+        ruedaI.rotation.y+=Math.PI/45;
+        ruedaD.rotation.y+=Math.PI/45;
 
         controles.target = new THREE.Vector3(grupo.position.x, grupo.position.y+11, grupo.position.z) ;
     }
     if(controls[83]){ // s
         grupo.position.x += Math.cos(grupo.rotation.y) * vel;
         grupo.position.z += -Math.sin(grupo.rotation.y) * vel;
-        ruedaI.rotation.y-=Math.PI/90;
-        ruedaD.rotation.y-=Math.PI/90;
+        ruedaI.rotation.y-=Math.PI/45;
+        ruedaD.rotation.y-=Math.PI/45;
 
         controles.target = new THREE.Vector3(grupo.position.x-5, grupo.position.y+11, grupo.position.z) ;
     }
